@@ -55,11 +55,11 @@ def cifra_cesar(texto, k):
 texto_original = str(input("Digite o texto a ser cifrado: "))
 texto_cifrado = cifra_cesar(texto_original, 3)
 print("Texto cifrado:", texto_cifrado)
-print("\n=== Ataque por Força Bruta ===")
+print("Ataque por Força Bruta")
 possiveis_textos = ataque_forca_bruta(texto_cifrado)
 for k, texto in possiveis_textos:
     print(f"Chave {k}: {texto}")
-print("\n=== Ataque por Análise de Frequência ===")
+print("Ataque por Análise de Frequência")
 chave_frequencia, texto_descriptografado = ataque_frequencia(texto_cifrado)
 print(f"Chave encontrada: {chave_frequencia}")
 print(f"Texto descriptografado: {texto_descriptografado}")
